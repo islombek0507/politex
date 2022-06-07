@@ -1,0 +1,89 @@
+.fakultetlar {
+}
+.fakultetlar__top {
+   border-bottom: 1px solid #EFEEEE;
+   padding-top: 100px;
+}
+
+.fakultetlar__name {
+    margin: 0;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 43px;
+    color: #37363C
+}
+.fakultetlar__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.fakultetlar__item{
+    width: 370px;
+    overflow: hidden;
+    margin-top: 50px;
+    border-radius: 10px;
+    position: relative;
+    &:hover .fakultetlar__img{
+        transform: scale(1.5);
+    }
+}
+.fakultetlar__link {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+  
+}
+.fakultetlar__img{
+    display: block;
+    position: relative;
+    opacity: .7;
+    transition: 1s ease all;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+.fakultetlar__content {
+    position: absolute;
+    bottom: 59px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    
+}
+// .fakultetlar__img-logo {
+// }
+.fakultetlar__title {
+    font-weight: 500;
+font-size: 26px;
+line-height: 32px;
+width: 317px;
+text-align: center;
+text-transform: uppercase;
+margin: 0 auto;
+color: #FFFFFF;
+margin-top: 30px;
+}
+@media screen and (max-width:  $macBok) {
+  .fakultetlar__item{
+      width: 313px;
+      margin-top: 20px;
+  }
+  .fakultetlar__top{
+    padding-top: 100px;
+  }
+  .fakultetlar__content{
+
+  }
+  .fakultetlar__title{
+      width: 268px;
+      font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+  }
+}

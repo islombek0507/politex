@@ -1,0 +1,113 @@
+.news__top {
+    border-bottom: 1px solid #EFEEEE;
+   
+}
+
+.news__top--container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-top: 100px;
+}
+.news__nime{
+    font-weight: 800;
+font-size: 40px;
+line-height: 59px;
+color: #37363C;
+margin: 0;
+}
+.news__list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+.news__item {
+    overflow: hidden;
+    width: 480px;
+    margin-right: 60px; 
+    border-radius: 20px;
+    margin-top: 70px;
+    box-shadow: 6.784px 0px 20.352px -5.088px rgba(0, 0, 0, 0.1), -6.784px 7.632px 20.352px -5.088px rgba(0, 0, 0, 0.1);
+    
+
+    &:hover .news__img{
+        transform: scale(1);
+        object-fit: cover;
+        height: 100%;
+        transition: 1s ease-in-out all;
+        z-index: -1;
+    }
+    &:hover .news__content{
+        position: absolute;
+        z-index: 5;
+        transition: 1s ease-in-out all;
+         margin-top: -290px;
+         
+    }
+    &:hover .news__text{
+        margin-top: 180px;
+    }
+   
+ &:last-child{
+    margin-right: 0;
+    }
+    &:nth-child(3n){
+        margin-right: 0;
+    }
+}
+
+.news__img {
+    border-radius: 20px 20px 0px 0px;
+    width: 500px;
+    object-fit: cover;
+    z-index: -1;
+    transition: 1s ease-in-out all;
+   
+    
+   
+}
+.news__content{
+    margin-left: 30px;
+}
+.news__text {
+    width: 426px;
+    
+    z-index: 4;
+    margin-top: 40px;
+}
+.news__logo{
+    display: flex;
+    align-items: center;
+    margin-top: -100px;
+}
+.nesw__logo_name{
+   margin-left: 21px;
+    font-weight: 800;
+font-size: 15px;
+line-height: 19px;
+color: #FFFFFF;
+width: 166px;
+text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+}
+.news__time{
+    font-weight: 300;
+font-size: 13px;
+line-height: 16px;
+color: #37363C;
+margin-left: 200px;
+}
+@media screen and (max-width:  $macBok) {
+  .news__item{
+      width: 424px;
+      margin-right: 20px;
+      &:hover .news__content{
+          margin-top: -340px;
+      }
+  }
+  .news__text{
+      width: 364px;
+  }
+}

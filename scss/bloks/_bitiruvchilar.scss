@@ -1,0 +1,64 @@
+.bitiruvchilar {
+}
+.bitiruvchilar__top {
+    border-bottom: 1px solid #EFEEEE;
+    padding-top: 100px;
+}
+.bitiruvchi__name {
+    margin: 0;
+    font-weight: 800;
+font-size: 35px;
+line-height: 43px;
+color: #37363C
+}
+
+.bitiruvchilar__container {
+}
+.bitiruvchilar__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.bitiruvchilar__item {
+    width: 300px;
+    overflow: hidden;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.bitiruvchilar__img {
+    display: block;
+}
+.bitiruvchilar__text {
+    width: 300px;
+    text-align: center;
+   
+font-size: 22px;
+line-height: 35px;
+}
+@media screen and (max-width:  $macBok) {
+     .bitiruvchilar__list{
+        //  flex-wrap: nowrap;
+        width: 100%;
+        display: flex;
+             flex-wrap: nowrap;
+        flex-direction: row;
+        overflow: hidden;
+   
+     }
+    .bitiruvchilar__item{
+        flex-shrink: 0;
+        width: 313px;
+        margin-right: 26px;
+
+        &:nth-child(4n){
+            margin-right: 0;
+        }
+    }
+  
+}

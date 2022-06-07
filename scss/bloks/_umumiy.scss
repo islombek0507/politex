@@ -1,0 +1,66 @@
+.umumiy {
+    background-image: url(../../img/umumiy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 40px;
+}
+
+.umumiy__container {
+    background: rgba(3, 3, 3, 0.35);
+opacity: 0.6;
+border: 5px solid #FFFFFF;
+backdrop-filter: blur(54px);
+border-radius: 10px;
+}
+.umumuiy__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+.umumiy__item {
+    width: 238px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 105px;
+}
+.umumiy__num {
+    font-weight: 700;
+font-size: 50px;
+line-height: 50px;
+margin: 0;
+}
+.umumiy__name {
+    font-weight: 700;
+font-size: 35px;
+line-height: 50px;
+
+
+
+
+}
+@media screen and (max-width:  $macBok) {
+  .umumiy{
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+  }
+  .umumiy__item{
+      width: 169px;
+      padding-top: 90px;
+      padding-bottom: 90px;
+  }
+  .umumiy__name{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    
+    color: #FFFFFF;
+  }
+}

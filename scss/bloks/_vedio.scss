@@ -1,0 +1,21 @@
+.vedio{
+  padding-top: 100px;
+  margin: 0 auto;
+}
+.vedio__iframe{
+    width: 100%;
+    height: 1067px;
+    
+}
+ ::-webkit-scrollbar .vedio__iframe{
+display: none;
+}
+.vedio__con{
+  margin: 0 auto;
+}
+@media screen and (max-width:  $macBok) {
+  .vedio__iframe{
+    height: 834px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+.container{
+    max-width: 1648px;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+}
+@media screen and (max-width: $macBok ) {
+    .container{
+        padding: 0px 15px;
+          max-width: 1342px;
+      }
+}
